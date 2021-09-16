@@ -1,17 +1,21 @@
 <html>
 	<head>
-		<title>Przykład nr 1 </title>
+		<title>Przykład nr tutaj wpisz odpowiedni nume </title>
 		<script language="JavaScript">
 			function WinOpen_kokoszka()
 			{
 			window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
 			}
+			function WinOpen_kokoszka2()
+			{
+			window.open("przyciski.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=750,top=700,left=0");
+			}
 		</script>
 	</head>
 	<body>
 		<form>
-			<h1> Kokoszka </h1>
-			<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_kokoszka(' ')">
+		<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_kokoszka(' ')">
+		<input type="button" name="przycisk" value="Nacisnij Mnie!" onclick="WinOpen_kokoszka2(' ')">
 		</form>
 	</body>
 </html>
