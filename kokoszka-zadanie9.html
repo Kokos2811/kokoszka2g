@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<div style="color:red;font-size:50px;">
+			<script language="JavaScript">
+				var d1_kok=prompt("d1_kok=","");
+				var g1_kok=prompt("g1_kok=","");
+				var d2_kok=prompt("d2_kok=","");
+				var g2_kok=prompt("g2_kok=","");
+				var sekundy;
+				var d1=parseFloat(d1_kok);
+				var g1=parseFloat(g1_kok);
+				var d2=parseFloat(d2_kok);
+				var g2=parseFloat(g2_kok);
+				sekundy=((24-g2)+(((d1)-(d2+1))*24)+g1)*60*60;
+				document.write("Od dnia "+d2+" godziny "+g2+" do dnia "+d1+" godziny " +g1+" minęło "+sekundy+" sekund<br>");
+			</script>
+		</div>
+	</body>
+</html>
