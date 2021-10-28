@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Użycie fukcji </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="color:navy;font-size:50px;">
+        <script language="JavaScript">
+            var a=parseFloat(prompt("a=",""));
+            var b=parseFloat(prompt("b=",""));
+            function suma_kok(a, b) {
+                return a + b;
+            }
+            function odejmowanie_kok(a, b) {
+                return a - b;
+            }
+            function mnozenie_kok(a, b) {
+                return a * b;
+            }
+            function do_kwadratu_1_kok(a) {
+                return a * a
+            }
+            function do_kwadratu_2_kok(b) {
+                return b * b;
+            }
+            function reszta_z_dzielenia_a_przez_b_kok(a, b) {
+                return a % b;
+            }
+            document.write("suma="+suma_kok(a,b)+"<br>");
+            document.write("odejmowanie="+odejmowanie_kok(a,b)+"<br>");
+            document.write("mnozenie="+mnozenie_kok(a,b)+"<br>");
+            document.write("a do kwadratu="+do_kwadratu_1_kok(a)+"<br>");
+            document.write("b do kwadratu="+do_kwadratu_2_kok(b)+"<br>");
+            document.write("reszta z dzielenia="+reszta_z_dzielenia_a_przez_b_kok(a,b)+"<br>");
+        </script>
+        </div>
+    </body>
+</html>
