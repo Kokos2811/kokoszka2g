@@ -1,0 +1,27 @@
+<html>
+	<body>
+		<textarea style="width:100%; height:100%;" >
+			<html>
+				<body>
+					<div style="color:red;font-size:50px;">
+					<script language="JavaScript">
+						var no_kok=prompt("no=","");
+						var t_kok=prompt("t=","");
+						var t12_kok=prompt("t1/2=","");
+						var no=parseFloat(no_kok);
+						var t=parseFloat(t_kok);
+						var t12=parseFloat(t12_kok);
+						var lambda=Math.LN2/t12;
+						var n=no*Math.pow(Math.E,(lambda*(-1))*t)
+						document.write("N0 = "+no+"[sztuk]"+"<br>");
+						document.write("t = "+t+"[lat]"+"<br>");
+						document.write("T1/2 = "+t12+"[lat]"+"<br>");
+						document.write("Lamda = "+lambda.toFixed(7)+"[1/rok]"+"<br>");
+						document.write("N = "+n.toFixed(7)+"[sztuk]"+"<br>");
+					</script>
+					</div>
+				</body>
+			</html>
+		</textarea>
+	</body>
+</html>

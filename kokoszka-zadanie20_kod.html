@@ -1,21 +1,26 @@
 <html>
+	<body>
+		<textarea style="width:100%; height:100%;" >
+<html>
     <head>
         <title>
-            Przykład obliczenia Pola i obwodu prostokąta
+            Przykład obliczenia Pola i obwodu trapezu równoramiennego
         </title>
         <script language="JavaScript">
-            function Pole_kokoszka(a_kok, b_kok){
+            function Pole_kokoszka(a_kok, b_kok, h_kok){
                 a=parseFloat(a_kok);
                 b=parseFloat(b_kok);
-                Pole=a*b;
+                h=parseFloat(h_kok);
+                Pole=((a*b)/2)*h;
                 document.getElementsByName('pole')[0].value=Pole.toFixed(2); /* na dokument */
                 alert("Pole="+Pole.toFixed(2)+" cm^2"); /*do okna Alert */
                 wyprowadz_pole_kok.innerHTML="Pole="+Pole.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
             }
-            function Obwod_kokoszka(a_kok, b_kok) {
+            function Obwod_kokoszka(a_kok, b_kok, h_kok) {
                 a=parseFloat(a_kok);
                 b=parseFloat(b_kok);
-                Obwod=a+a+b+b;
+                var x=Math.sqrt(Math.pow(h,2)+Math.pow(Math.abs(a-b)/2,2));
+                Obwod=a+b+x+x;
                 document.getElementsByName('obw')[0].value=Obwod.toFixed(2);
                 alert("Obwod="+Obwod.toFixed(2)+" cm");
                 wyprowadz_obwod_kok.innerHTML="Obwod="+Obwod.toFixed(2)+"cm";
@@ -23,13 +28,15 @@
         </script>
     </head>
     <body>
-        Obliczanie Pola i obwodu prostokąta
+        Obliczanie Pola i obwodu trapezu równoramiennego
         <br> <br>
-        <form name="formularz" action="..." onsubmit="Pole_kokoszka(this.a_dana_kok.value,this.b_dana_kok.value); Obwod_kokoszka(this.a_dana_kok.value,this.b_dana_kok.value);return false">
+        <form name="formularz" action="..." onsubmit="Pole_kokoszka(this.a_dana_kok.value,this.b_dana_kok.value,this.h_dana_kok.value); Obwod_kokoszka(this.a_dana_kok.value,this.b_dana_kok.value,this.h_dana_kok.value);return false">
         Podaj a=
         <input size="6" name="a_dana_kok">
         Podaj b=
         <input size="6" name="b_dana_kok">
+        Podaj h=
+        <input size="6" name="h_dana_kok">
         <br>
         <br>
         <input TYPE="submit" Value="oblicz" >
@@ -45,4 +52,7 @@
         <tr id="wyprowadz_obwod_kok"></tr>
         </table>
     </body>
+</html>
+		</textarea>
+	</body>
 </html>

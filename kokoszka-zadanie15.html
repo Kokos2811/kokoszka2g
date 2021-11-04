@@ -1,7 +1,5 @@
-<!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Zadanie 15</title>
 		<div style="color:red;font-size:50px;">
 			<script type="text/javascript">
@@ -9,18 +7,19 @@
 				var x2_kok=prompt("x2=","");
 				var x1=parseFloat(x1_kok);
 				var x2=parseFloat(x2_kok);
-				var y1=3*math.pow(x1, (6 / (6+2)));
-				var y2=(2*math.cos(x1*math.pi/180))+(2*math.sin(x1*math.pi/180));
-				var y3=math.cbrt(math.pow(x1, 5)+2*math.pow(x2, 4));
-				var y4=math.abs(x1-x2);
-				var y5=y3*y4;
+				var y1, y2, y3, y4, y5;
+				y1=3*Math.pow(x1, (6 / (6+2)));
+				y2=(2*Math.cos(x1*Math.PI/180))+(2*Math.sin(x1*Math.PI/180));
+				y3=Math.cbrt(Math.pow(x1, 5)+2*Math.pow(x2, 4));
+				y4=Math.abs(x1-x2);
+				y5=y3*y4;
 				document.write("x1 = "+x1+"<br>");
 				document.write("x2 = "+x2+"<br>");
-				document.write("y1 = "+y1+"<br>");
-				document.write("y2 = "+y2+"<br>");
-				document.write("y3 = "+y5+"<br>");
+				document.write("y1 = "+y1.toFixed(2)+"<br>");
+				document.write("y2 = "+y2.toFixed(2)+"<br>");
+				document.write("y3 = "+y5.toFixed(2)+"<br>");
 			</script>
-			</div>
+		</div>
 	</head>
 	<body>
 		

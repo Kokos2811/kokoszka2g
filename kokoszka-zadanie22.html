@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Przykład obliczenia odległości od drabiny i kąta
+        </title>
+        <script language="JavaScript">
+            function wysokosc_kokoszka(odl_kok, s_kok){
+                odl=parseFloat(odl_kok);
+                s=parseFloat(s_kok);
+                h_kok=Math.sqrt(Math.pow(s,2)-Math.pow(odl,2));
+                document.getElementsByName('wysokosc')[0].value=h_kok.toFixed(2); /* na dokument */
+                alert("Wysokosc="+h_kok.toFixed(2)); /*do okna Alert */
+                wyprowadz_h_kok.innerHTML="Wysokosc="+h_kok.toFixed(2)+"<br>"; /* do tabeli */
+            }
+            function kat_kokoszka(odl_kok, s_kok) {
+                odl=parseFloat(odl_kok);
+                s=parseFloat(s_kok);
+                kat_kok=Math.acos(odl/s)*(180/Math.PI);
+                document.getElementsByName('kat')[0].value=kat_kok.toFixed(2);
+                alert("Kat="+kat_kok.toFixed(2)+" °");
+                wyprowadz_kat_kok.innerHTML="Kat="+kat_kok.toFixed(2)+" °"+"<br>";
+            }
+        </script>
+    </head>
+    <body>
+        Obliczanie odległości od drabiny i kąta
+        <br> <br>
+        <form name="formularz" action="..." onsubmit="wysokosc_kokoszka(this.odl_dana_kok.value,this.s_dana_kok.value); kat_kokoszka(this.odl_dana_kok.value,this.s_dana_kok.value);return false">
+        Podaj odleglosc=
+        <input size="6" name="odl_dana_kok">
+        Podaj droge=
+        <input size="6" name="s_dana_kok">
+        <br>
+        <br>
+        <input TYPE="submit" Value="oblicz" >
+        <br>
+        <br>
+        Wysokosc=
+        <input size="6" name="wysokosc">
+        Kat =
+        <input size="6" name="kat">
+        </form>
+        <table>
+        <tr id="wyprowadz_h_kok"></tr>
+        <tr id="wyprowadz_kat_kok"></tr>
+        </table>
+    </body>
+</html>
