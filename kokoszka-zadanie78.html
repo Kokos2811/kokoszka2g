@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title> Przykład użycia pętli </title>
+        <script language="JavaScript">
+            var l1_kok=prompt("Podaj pierwszą liczbę","");
+            var l2_kok=prompt("Podaj drugą liczbę","");
+            var l1=parseFloat(l1_kok);
+            var l2=parseFloat(l2_kok);
+            if(l1<l2){
+                for(var i=l1;i<=l2;i++) {
+                    if(i%2==1) {
+                        document.write("<font size='6' color='green'>"+i+", ");
+                    }
+                }
+            }
+            else if(l1>l2){
+                for(var i=l1;i>=l2;i--) {
+                    if(i%2==1) {
+                        document.write("<font size='3' color='blue'>"+i+", ");
+                    }
+                }
+            }
+            else if(l1==l2){
+                var x=confirm("Podane liczby są takie same!!!")
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

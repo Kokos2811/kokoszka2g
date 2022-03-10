@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title> Przykład użycia pętli </title>
+        <script language="JavaScript">
+            var ile_kok=prompt("Ile razy powtórzyć=","");
+            var ini_kok=prompt("Podaj swoje inicjały=","");
+            var x=parseFloat(ile_kok);
+            for ( var i=1; i<=x; i++){
+                for ( var k=1; k<=i; k++){
+                    document.write("&nbsp");
+                }
+                document.write(i+"_"+ini_kok+"_"+i+"<br>");
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
