@@ -1,0 +1,30 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <textarea>
+            <html>
+    <head>
+        <script type="text/javascript">
+            function Router(firma_kok,model_kok,iloscRJ45_kok){
+                this.Firma=firma_kok;
+                this.Model=model_kok;
+                this.IloscRJ45=iloscRJ45_kok;
+            };
+            Router.prototype.wypisz = function () {
+                alert(this.Firma+' '+this.Model+' '+this.IloscRJ45+" wejsc RJ45");
+            };
+            var router1 = new Router('TP-LINK', 'TL-WR843ND', '5');
+            router1.wypisz();
+            document.write("Router pierwszy:"+router1.Firma+" "+router1.Model+" ma "+router1.IloscRJ45+" wejsc RJ45");
+        </script>
+    </head>
+    <body>
+        <br>
+        programowanie obiektowe
+    </body>
+</html>
+        </textarea>
+    </body>
+</html>

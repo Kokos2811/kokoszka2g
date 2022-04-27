@@ -1,0 +1,36 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <textarea>
+        <html>
+            <head>
+                <script>
+                    function kolor() {
+                        var kol=prompt("Podaj wybrany przez siebie kolor","");
+                        if(kol=="1"){
+                            document.write("<font color=red size=7>wpisałes kolor czerwony</font>"+"<br>");
+                        }
+                        if(kol.toLocaleLowerCase()=="czerwony"){
+                            document.write("<font color=red size=7>wpisałes kolor czerwony</font>"+"<br>");
+                        }
+                        if(kol=="2"){
+                            document.write("<font color=blue size=1>wpisałes kolor niebieski</font>"+"<br>");
+                        }
+                        if(kol.toLocaleLowerCase()=="niebieski"){
+                            document.write("<font color=blue size=1>wpisałes kolor niebieski</font>"+"<br>");
+                        }
+                    }
+                </script>
+            </head>
+            <body>
+                <p><font color=green size=7><b>MENU</b></p>
+                <br>
+                <p><font color=red><b>1-CZERWONY</b></p>
+                <p><font color=blue><b>2-NIEBIESKI</b></p>
+                <input type="button" onclick="kolor()" value="WYBIERZ">
+            </body>
+        </html>
+    </textarea>
+    </body>
+</html>
